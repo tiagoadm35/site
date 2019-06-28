@@ -1,0 +1,253 @@
+body {
+	width: 85%;
+	margin: 0 auto;
+	padding: 0;
+	font-family: Helvetica;
+	color: #333;
+	background: url(../imagem/fundo.jpg);
+	background-attachment: fixed;
+	background-size: 50% 100%;
+}
+
+header img{
+	width:100%;
+}
+
+article{
+	background:white;
+}
+
+h1,h2,h3{
+	margin: 2%;
+	padding: 1%;
+	color:#3E4095;
+}
+
+article p {
+	margin: 0 0 2.5% 0;
+	font-size: 100%;
+	line-height: 140%;
+}
+/*
+definição dos links
+*/
+/* Nav */
+.menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:relative;
+}
+.menu ul li{
+	padding:1% 0 1% 0;
+	background: rgb(58, 58, 58);
+	border-bottom:5px solid rgb(56, 177, 214);
+	margin-bottom:3%;
+	margin-right:2.5%;
+	color:#3E4095;
+	width:100%;
+}
+
+.menu a{
+	font-size:125%;
+	font-weight:bold;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	color:white;
+}
+.menu ul li ul li a{
+	background:none; 
+}
+.menu ul ul li{
+	border-bottom: none;
+	float:none;
+}
+
+.menu ul li ul{
+	background: rgb(58, 58, 58);
+	font-size:75%;
+	display:none;
+	margin-bottom:3%;
+}
+
+.menu ul li:hover ul{
+	display:block;
+}
+
+.menu a:hover{
+	color:black;
+	background: rgb(56, 177, 214);
+}
+.menu ul ul li:hover{
+	background:rgb(56, 177, 214);
+}
+article{
+	padding: 2.5%;
+	font-size: 125%;
+}
+
+article {
+	float: left;
+}
+
+p{
+	text-indent: 20px;
+	text-align: justify;
+	color:#606062;
+}
+
+aside {
+	margin: 2.5% 0 2.5% 0;
+	padding: 1%;
+	float: right;
+	background: white;
+}
+
+footer {
+	clear: both;
+	background: rgb(58, 58, 58);
+	padding: 2%;
+	border-top: 5px solid white;
+	text-align: center;
+	color: white;
+}
+/*Ajustes nas imagens dos professores*/
+.professorImg {
+	border: 2px solid white;
+	box-shadow:black 5px 5px 5px;
+	width: 20%;
+	float:left;
+	margin: 1.5%;
+	background: white;
+
+}
+/*Ajustes nas imagens da pagina da pagina de algoritmo*/
+.foto{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:60vw;
+	border:2px solid gray;
+	border-radius:10px 10px 10px 10px;
+}
+
+.professorImg:hover, .foto:hover, .imgExerciciosDesign img:hover{
+	transform: rotate(-5deg);
+}
+/*Ajustes nas imagens da pagina de Design*/
+.imgExerciciosDesign{
+	padding:5% 0 5% 0;
+	background:white;
+	width:100%;
+}
+
+.imgExerciciosDesign img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:30vw;
+}
+/* Pagina Fatec */
+#Container{
+	background:white;
+	padding-left:1.5vw;
+	display:grid;
+	grid-template-areas:"imgFatec1" "imgFatec2" "imgFatec3" "imgFatec4" "imgFatec5" "imgFatec6" "imgFatec7" "imgFatec8";
+	grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+	align-items:center;
+}
+
+#Container img{
+	margin:2.5%;
+	width:70vw;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.imgFatec1{
+	grid-area:imgFatec1;
+}
+
+.imgFatec2{
+	grid-area:imgFatec2;
+}
+
+.imgFatec3{
+	grid-area:imgFatec3;
+}
+
+.imgFatec4{
+	grid-area:imgFatec4;
+}
+
+.imgFatec5{
+	grid-area:imgFatec5;
+}
+
+.imgFatec6{
+	grid-area:imgFatec6;
+}
+
+.imgFatec7{
+	grid-area:imgFatec7;
+}
+
+.imgFatec8{
+	grid-area:imgFatec8;
+}
+.link-fatec{
+	text-decoration:none;
+	color:#3E4095;
+}
+
+
+@media screen and (min-width: 769px){
+	header img{
+		width:100%;
+	}
+	.menu {
+		height:80px;
+		background: rgb(58, 58, 58);
+		border-bottom: 5px solid rgb(56, 177, 214);
+	}
+	
+	.menu ul{
+		text-align:center;
+		list-style:none;
+		position:relative;
+	}
+	.menu ul li{
+		padding:0;
+		display: inline-block;
+		margin-top:15px;
+		background:none;
+		width:125px;
+	}
+	.menu ul ul a, .menu ul ul li{
+		margin-bottom:0;
+		padding:2% 0 2% 0;
+	}
+	.menu a{
+		padding:9%;
+		display:block;
+		text-decoration:none;
+		text-align:center;
+	}
+	.menu ul li ul{
+		width:350px;
+		position:absolute;
+	}
+	.menu ul li ul li{
+		width:350px;
+	}
+	
+	#Container{
+		grid-template-areas:"imgFatec1 imgFatec2 imgFatec3" "imgFatec4 imgFatec5 imgFatec6" "imgFatec7 imgFatec8 imgFatec9";
+		grid-template-rows: 33% 33% 33% ;
+	}
+	#Container img{
+		width:25vw;
+	}
+}
